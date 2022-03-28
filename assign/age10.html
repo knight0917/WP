@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+      <script>
+
+        var month = parseInt(prompt("birth month(1-12)","")-1);
+        var day = parseInt(prompt("birth day(1-31)",""));
+
+        var birthday = new Date();
+        var currentdate = new Date();
+        var one_day = 1000*60*60*24;
+
+        birthday.setDate(day);
+        birthday.setMonth(month);
+        birthday = birthday.getTime();
+        currentdate = currentdate.getTime();
+
+        var theDate = birthday-currentdate;
+        document.write(theDate + "<br>");
+        theDate = (theDate / one_day);
+
+        document.write("days left are"+ theDate.toFixed(0) +"in your birthday");
+    </script>
+</body>
+</html>
