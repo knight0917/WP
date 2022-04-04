@@ -10,12 +10,8 @@
   <input id="bday" onblur="calculateDays()" type="date" />
   <p id="result"></p>
 </form>
+
 <script>
-// Enables to choose future dates
-    // (function () {
-    //   let today = new Date();
-    //   document.getElementById("bday").max = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + (today.getDate() < 10 ? ("0" + (today.getDate()-1)) : (today.getDate()-1));
-    // })();
 
     function calculateDays() {
       let today = new Date();
@@ -34,7 +30,7 @@
       
       // No need to calculate people older than 199 yo. :)   
       if (daysLeft && age < 200) {
-        document.getElementById("result").innerText = `In birthday'll be in ${daysLeft} days!!`;  
+        document.getElementById("result").innerText = `Your birthday'll be in ${daysLeft} days!!`;  
       } else {
         document.getElementById("result").innerText = "Please enter a valid birtday.";
       }
