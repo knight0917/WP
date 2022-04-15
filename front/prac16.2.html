@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowel "a"</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+
+    <script>
+        let word = window.prompt("Enter a name:");
+        let first_index;
+        let last_index;
+        let counter = 0;//for int enter 0
+
+//how many "a" in your word
+        for(let i=0; i< word.length; i++){
+            if(word[i] === 'a'){
+                counter ++;
+            }
+        }
+
+// check if number of a is greater than 2
+       if(counter>1){ 
+
+            // for counting from front
+            for(i=0; i<word.length;i++){
+                if(word[i] === 'a'){
+                    first_index = i+1;
+                    break;
+                }
+            }
+
+            // for counting from back
+            for(i=word.length; i>0; i--){
+                if(word[i] === 'a'){
+                    last_index = i+1;
+                    break;
+                }
+            }
+
+            let result = last_index - first_index; //for find difference between two "a"
+
+            let remain = word.substring(first_index, result); //substring use for remaining letter in word
+
+            document.write("The first occurrence of a : ",first_index, "<br>");
+            document.write("The last occurrence of a : ",last_index, "<br>");
+            document.write( "String between them : ",remain);
+       }
+       else{
+           document.write("Enter a word with two 'a's ")
+       }
+
+
+    </script>
+    
+</body>
+</html>

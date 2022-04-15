@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click the mouse button</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <button id="button" oncontextmenu="event.preventDefault()">click here</button>
+    <p id="log"></p>
+
+    <form id="myform">
+        First name:<input type="text"><br>
+        Last name: <input type="text"><br>
+    </form>
+    <button onclick="myFunction()">click</button>
+    <p id="demo"></p>
+
+
+    <script>
+        let button =  document.getElementById('button');
+        let log = document.getElementById('log');
+        button.addEventListener('mouseup', logMouseButton);
+
+        function logMouseButton(e){
+            if(typeof e ==='object'){
+                switch (e.button) {
+                    case 0:
+                        log.textContent = 'Left button clicked.';
+                        break;
+                    case 1:
+                        log.textContent = 'Middle button clicked.';
+                        break;
+                    case 2:
+                        log.textContent = 'Right button clicked.';
+                        break;
+                default:
+                    log.textContent = `Unknown button code: ${e.button}`;
+                }
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myform").elements.length;
+            document.getElementById("demo").innerHTML = "Found " + x + " elements in the form.";
+        }
+
+        document.write('Hello world!!');
+
+    </script>
+</body>
+</html>

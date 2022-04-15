@@ -10,7 +10,7 @@
 <body>
 
 <?php
-    // Starting session,You must call at beginning at the page
+    //You must call at beginning at the page
     session_start();
 
     // Storing session data

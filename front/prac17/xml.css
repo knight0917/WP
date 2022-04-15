@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,300&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 3px;
+}
+th{
+    background-color: grey;
+}
+
+tr{
+    border: 1px solid black;
+    
+}
+
+td, th{
+    border: 2px solid #ddd;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation in JS</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <form name="form" onsubmit="return validateform()">
+        <label>Username:</label>
+        <input type="text" name="username"><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        function validateform(){
+            var username = document.form.username.value;
+            var password = document.form.password.value;
+
+            if(username == null || username == ""){
+                document.write("username can't be blank");
+                return false;
+            }else if(password.length<8){
+                document.write("Password must be at least 8 characters long.");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

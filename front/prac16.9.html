@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lock user & change color</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body onbeforeunload="return myFunction()"> <!-- The return statement stops the execution of a function and returns a value. -->
+
+    <a href="https://www.google.com">I will redircted to u to google</a>
+    <script>
+        function myFunction() {
+          return "";
+        }
+    </script>
+</body>
+</html>
+
+<!-- (ii) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chnage BG color of head</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <h1 id="head">I am the Heading.</h1>
+
+    <script>
+        document.getElementById("head").addEventListener("mouseover", function() {
+        document.getElementById("head").style.backgroundColor = "yellow";
+        });
+
+        document.getElementById("head").addEventListener("mouseout", function() {
+        document.getElementById("head").style.backgroundColor = "black";
+        });
+    </script>
+</body>
+</html>

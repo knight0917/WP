@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mutiply first digit by itself for second digit</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <script>
+        var num = window.prompt("Enter two digit no.");
+        var arr = num.toString().split("");
+
+        var total = arr.reduce(function(a, b) {
+        return parseInt(a) ** parseInt(b);
+        });
+
+        document.write("splitted no. is:",arr, "<br>");
+        document.write("By multiplying first digit itself for second digit times:",total);
+    </script>
+</body>
+</html>

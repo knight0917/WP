@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click the mouse button</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <button onclick="document.getElementById('date_time').innerHTML = Date()">Find Time</button>
+    <p id="date_time"></p>
+
+    <button onclick="changeBg('red');">RED</button>
+    <button onclick="changeBg('green');">GREEN</button>
+
+    <script>
+        function changeBg(color){
+            document.body.style.background = color;
+        }
+    </script>
+</body>
+</html>

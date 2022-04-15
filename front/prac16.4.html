@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <input type="text" size="40" onkeypress="myFunction(event)" placeholder="enter anything">
+    <p id="demo"></p>
+
+    <button onclick="changeBg('blue');">CLICK</button>
+
+    <script>
+        function myFunction(event) {
+            let keycode= event.which;
+            document.getElementById("demo").innerHTML = keycode;
+        }
+
+        var input = prompt("Enter a character:");
+
+        if (input == 'a' || input == 'A' || input == 'e' || input == 'E' || input == 'i' || input == 'I' || input == 'o' || input == 'O' || input == 'u' || input == 'U') {
+            document.write("It's a vowel");
+        } else if ((input >= 'a' && input <= 'z') || (input >= 'A' && input <= 'Z')) {
+            document.write("It's not vowel");
+        } else {
+            console.log("Invalid input please enter an alphabet");
+        }
+
+        function changeBg(color){
+            document.body.style.background = color;
+        }
+    </script>
+</body>
+</html>

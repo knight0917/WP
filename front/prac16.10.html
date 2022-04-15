@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci series</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <script>
+
+        var n1 = 0,  n2 = 1, next_num, i;  
+        var num = parseInt (prompt (" Enter the limit for Fibonacci Series "));
+
+        document.write( "Fibonacci Series: "); 
+        
+        for ( i = 1; i <= num; i++)  {
+            document.write (" <br> " +  n1);  
+            next_num = n1 + n2; 
+            
+            n1 = n2; // assign the n2 value into n2  
+            n2 = next_num; // assign the next_num into n2  
+        }  
+
+    </script>
+</body>
+</html>

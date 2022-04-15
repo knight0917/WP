@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="xml.css"?>
+<?xml-stylesheet type="text/xsl" href="bookinfo.xsl"?>
+
+
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bookinfo.xsd">
+<book>
+  <title>Harry Potter</title>
+  <author>J.K. Rowling</author>
+  <ISBN>123-456-789</ISBN>
+  <publisher>Bloomsbury Publishing</publisher>
+  <price>300</price>
+</book>
+<book>
+  <title>House of Leaves</title>
+  <author>J K. Rowling</author>
+  <ISBN>123-450-456</ISBN>
+  <publisher>Random House</publisher>
+  <price>299</price>
+</book>
+<book>
+  <title>The Marvel Encyclopedia</title>
+  <author>Erik T. Ray</author>
+  <ISBN>123-489-234</ISBN>
+  <publisher>Comics</publisher>
+  <price>399</price>
+</book>
+</bookstore>

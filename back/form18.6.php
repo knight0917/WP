@@ -45,12 +45,12 @@
         <input type="submit" name="submit">  
     </form>
 
-    Welcome <?php 
+    <?php 
         if(isset($_GET['submit'])){
             $name = $_GET['name'];
-            echo "$name !!!";
+            echo "Welcome $name !!!";
         }
-     ?>
+    ?>
 
 </body>
 </html>
